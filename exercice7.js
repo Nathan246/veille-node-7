@@ -65,6 +65,14 @@ if (err) return console.log(err)
  })
 })
 
+app.get('/vider', (req, res) => {
+ db.collection('adresse').remove({}, (err, resultat) => {
+
+if (err) return console.log(err)
+ res.redirect('/membres')  // redirige vers la route qui affiche la collection
+ })
+})
+
 app.get('/trier/:cle/:ordre', (req, res) => {
 	let cle = req.params.cle
 	let ordre = (req.params.ordre == 'asc' ? 1 : -1)
