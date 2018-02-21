@@ -32,7 +32,7 @@ const peupler = () => {
 		let nom = tableau.tabNom[pNom]
 		let prenom = tableau.tabPrenom[pPrenom]
 		let telephone = tableau.tabTelephone[pTelephone]
-		let courriel = tableau.tabCourriel[pCourriel]
+		let courriel = tableau.tabPrenom[pPrenom] + tableau.tabNom[pNom] + tableau.tabCourriel[pCourriel]
 
 		/*return {
 			domaine : domaine,

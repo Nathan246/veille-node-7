@@ -44,11 +44,10 @@ const tabTelephone = [
 	"514-746-9218"
 ]
 const tabCourriel = [
-	"test1@live.ca",
-	"test2@hotmail.com",
-	"oui123@gmail.com",
-	"jenaipasdidee1997@yahoo.com",
-	"scrummaster69@gmail.com"
+	"@live.ca",
+	"@hotmail.com",
+	"@gmail.com",
+	"@yahoo.com",
 ]
 
 const tableau = {
