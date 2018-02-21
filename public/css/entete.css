@@ -1,8 +1,13 @@
 header {
 	text-align: center;
-	background-color: #C2C2C2;
+	background-color: #9e9e9e;
 }
 
 nav, section {
 	padding: 10px 0;
+}
+
+
+nav a {
+	padding: 0 10px;
 }

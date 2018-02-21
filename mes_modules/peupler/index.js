@@ -14,7 +14,6 @@ const maxTelephone = tableau.tabTelephone.length
 const maxCourriel = tableau.tabCourriel.length
 
 const peupler = () => {
-	console.log("ok")
 	/*let positionVille = Math.floor(Math.random() * maxVille)
 	let ville = tableau.tabVille[positionVille]
 
