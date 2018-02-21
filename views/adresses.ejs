@@ -37,5 +37,22 @@ elmForm.submit()
 
  })
  } 
+
+ let elmTrier = document.getElementsByClassName("trier");
+	 let ordre = window.location.href.split("/")[5];
+	 //console.log(ordre)
+	 if (ordre != null) {
+		 for (elm of elmTrier) {
+		 	if (ordre == "asc") {
+		 		ordre = "desc";
+		 	} else {
+		 		ordre = "asc"
+		 	}
+		 }
+		 for (let i = 0; i < elmTrier.length; i++) {
+		 	elmTrier[i].href = "/trier/" + elmTrier[i].href.split("/")[4] + "/" + ordre
+		 	console.log(elmTrier[i].href)
+		 }
+	 }
 </script>
 </html>
