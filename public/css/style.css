@@ -5,8 +5,14 @@
 }
 
 body {
-	margin: 0 auto;
-	
+	margin: 0px auto;
+	text-align: center;
+	background-color: #FF413F;
+	color: white;
+}
+
+body > * {
+	padding: 20px;
 }
 
 ul {
@@ -20,4 +26,24 @@ ul li {
 
 form {
 	margin: 0 auto;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+a:hover {
+	color: lightgrey;
+
+}
+
+table a {
+	font-size: 1.2rem;
+}
+
+nav a {
+	padding: 0 2px;
 }
