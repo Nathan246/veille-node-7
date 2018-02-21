@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
+const util = require("util");
+const peupler = require("./mes_modules/peupler")
 app.use(express.static('public'));
 /* on associe le moteur de vue au module «ejs» */
 const bodyParser= require('body-parser')
@@ -95,7 +97,6 @@ app.post('/modifier', (req, res) => {
 			telephone: req.body.telephone,
 			courriel: req.body.courriel
 		}
-		var util = require("util");
  		console.log('util = ' + util.inspect(oModif));
  	} else {
 		console.log('insert')
