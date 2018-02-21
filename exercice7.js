@@ -86,6 +86,20 @@ app.get('/trier/:cle/:ordre', (req, res) => {
 	})
 })
 
+app.get('/peupler', (req, res) => {
+	var oModif = {
+		prenom: peupler().prenom, 
+		nom: peupler().nom,
+		telephone: peupler().telephone,
+		courriel: peupler().courriel
+	}
+	db.collection('adresse').save(oModif, (err, result) => {
+	if (err) return console.log(err)
+		console.log('sauvegarder dans la BD')
+		res.redirect('/membres')
+	})
+})
+
 app.post('/modifier', (req, res) => {
 	console.log('req.body' + req.body)
  	if (req.body['_id'] != "") { 
