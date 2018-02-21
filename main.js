@@ -3,4 +3,4 @@
 const peupler = require("./mes_modules/peupler")
 const util = require("util")
 
-console.log("dans main = " + util.inspect(peupler()))
+console.log(util.inspect(peupler()))
