@@ -87,16 +87,7 @@ app.get('/trier/:cle/:ordre', (req, res) => {
 })
 
 app.get('/peupler', (req, res) => {
-	let oModif = []
-	for(let i = 0; i < 10; i++) {
-			oModif[i] = {
-			prenom: peupler().prenom, 
-			nom: peupler().nom,
-			telephone: peupler().telephone,
-			courriel: peupler().courriel
-		}
-	}
-	db.collection('adresse').insertMany(oModif, (err, result) => {
+	db.collection('adresse').insertMany(peupler(), (err, result) => {
 	if (err) return console.log(err)
 		console.log('sauvegarder dans la BD')
 		res.redirect('/membres')
